@@ -1,0 +1,141 @@
+:root{
+    --vermelho: #E50914;
+    --preta: rgb(20,20,20);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos principais*/
+
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: rgb(235, 215, 215);
+}
+
+header .container{
+    background: var(--preta);
+    background: linear-gradient(to top, rgba(0,0,0,.7) 10%, rgba(0,0,0));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 68px;
+    margin-left: 0px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+
+}
+
+header .logo{
+    max-width: 100%;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 55px;
+    padding-right: 53px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #FFF;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #AAA;
+}
+
+/*Filme principal*/
+
+.conteudo-principal{
+    font-size: 23px;
+    background: linear-gradient(rgba(0,0,0,.50) 90%, rgba(0,0,0,.50)), url('img/capa.jpg');
+    height: 800px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 40px;
+}
+
+.conteudo-principal .sinopse{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo{
+    margin-top: 5%;
+    font-size: 70px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.titulo-2{
+    position:absolute;
+    padding-top: 190px;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+
+.botao{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor:pointer;
+    transition: .3s ease all;
+}
+
+.botao-1{
+    background-color: rgba(32, 31, 31, 0.89);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor:pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: rgba(221, 201, 201, 0.884);
+    color: rgb(0, 0, 0);
+}
+
+.botao-1:hover{
+    background-color: rgba(19, 18, 18, 0.678);
+    color: rgb(255, 255, 255);
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.conteudo-principal .container{
+    width: 82%;
+
+}
+
+.box-filme{
+    margin-left: 55px;
+    padding: 3px;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 0.2px;
+}
